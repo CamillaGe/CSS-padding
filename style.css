@@ -1,0 +1,224 @@
+
+/* Bakgrundsbild för sidorna som inte har flexbox */
+body {
+    
+    display:block;
+    position: relative;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  
+  body::after {
+    background: url(img/spacebg.jpg);
+    content: "";
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;   
+  }
+
+/* Header för alla sidor*/ 
+    .header {
+        padding: 60px;
+        text-align: center;
+        background:#f8dbcd;
+        color: black;
+        
+       
+      }
+
+/* Navigationsbar för alla sidor*/
+      .navbar {
+        display: flex;
+        background-color: #333;
+        font-family: sans-serif;
+        
+    
+}
+
+  
+  /* För styling av navigationslänkarna*/
+
+  .navbar a {
+    color: white;
+    padding: 14px 140px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+/* Styling för rubriken i header*/
+h1{
+    color: black;
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight:lighter;
+}
+
+h2{
+    font-family: sans-serif; 
+    font-weight: lighter;
+}
+/* Styling för underrubriken i header*/
+h2.header{
+    color: black;
+    font-family:'Megrim', cursive;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   
+    
+   
+}
+/* Styling för rubrikerna på andra sidorna*/
+h2.about{
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+}
+
+h2.contact, h2.home{
+    color: white;
+    margin-top: 150px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+h2.gallery{
+    color:white;
+    padding-left: 225px;
+    margin-top: 120px;
+    text-align: left;
+}
+
+/* Styling för footer*/
+h4{
+    font-weight: lighter;
+    font-family: 'Megrim', cursive;
+}
+
+/* Styling för diverse text*/
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    padding-left:50px;
+    color: white;
+    margin-bottom: 150px;
+    
+    }
+    
+    p.about{
+        padding-left: 50px;
+        margin-bottom: 80px;
+        color: black;
+    }
+    
+      
+   
+      /* Flexbox för bildgalleri på sidan Webshop*/
+    .flexbox-container{
+        display: flex;
+        justify-content:center; 
+        align-items: flex-start; 
+        border: none;
+        height: 550px;
+    }
+      .flexbox-item{
+        height: 350px;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid white;
+        background-color: white;
+    } 
+    
+    .flexbox-item-1{
+      flex-basis: 300px; 
+    }
+    
+    .flexbox-item-2{
+       
+        flex-basis: 100px;
+    }
+    .flexbox-item-3{
+       
+        flex-basis: 100px;
+    }
+    
+    
+    /*Rows/columns för sidan About */
+    
+    .row {
+        display:flex;
+        flex-direction: column;
+        
+      }
+      
+      
+      .column1 {
+        flex: 2; 
+        padding: 10px;
+        background-color:#708090;    
+          
+        
+      }
+    
+      .column2 {
+        flex: 2;
+        padding: 10px;
+        background-color:linen;
+      }
+
+      /* Styling för bilder i Webshop/bildgalleri*/
+#space{
+    width: 300px;
+    height: 350px;
+    
+}
+
+#space:hover{
+    opacity: 0.8;
+}
+
+#rutig{
+    width:300px;
+    height: 350px;
+}
+
+#rutig:hover{
+    opacity: 0.8;
+  }
+
+#blackwhite{
+    width:280px;
+    height: 350px;
+}
+
+
+#blackwhite:hover{
+  opacity: 0.8;
+}
+ 
+
+ 
+/* Footer för alla sidor*/  
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #f8dbcd;
+    margin-top: auto;
+    
+    
+    
+}
+
