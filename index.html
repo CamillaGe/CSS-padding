@@ -1,3 +1,10 @@
+<!-- WCAG: 
+   - 3.2.3 Konsekvent navigering 
+    (Låt gränssnittselement ha samma utseende, funktionalitet och placering på hela webbplatsen.)  
+    -  2.4 Navigerbart
+    (Tillhandahåll sätt att hjälpa användarna att navigera, hitta innehåll och avgöra var de är.)
+    --> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +21,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 
+
+
 </head>
 
  
 <body> <!-- Här börjar sidans body  -->
 
+    <script src="script.js"></script> <!-- Länk till Javascript  -->
     
 <header> <!-- Min header  -->
     <div class="header">
@@ -43,10 +53,20 @@
 
     <!-- H2 tagg med egen klass då den skiljer sig från andra på sidorna  -->
 <h2 class="home">
-        You Found Us!</h2>
-        <p>Why be dull when your can space up your life? <br>Find yourself a fun piece to wear.</p>
+        You found us!</h2>
+        <p>Why be dull when your can space up your life? <br>Find yourself a unique piece to wear at Second Space.</p>
     
-  
+        <!-- Onclick Javascript -->
+       
+        <h1 class="quote" onclick="changeText(this)">Click me for an AMEN!</h1>
+       
+        <script>
+        function changeText(id) {
+          id.innerHTML = "<i>Beeing the best is great, I'm the only one. <br>But beeing unique is greater, I'm the <b>ONLY</b> one.</i>";
+        }
+        </script>
+        <br><br><br>
+
 </section>
 
 <!-- Min footer  --> 

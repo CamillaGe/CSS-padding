@@ -120,8 +120,14 @@ p{
         color: black;
     }
     
-      
-   
+      p.contact{
+        margin-bottom: 60px;
+      }
+
+      p.news{
+        margin-bottom: 40px;
+        font-size: 16px;
+      }
     
     .flexbox-container{
         display: flex;
@@ -162,15 +168,14 @@ p{
       }
       
       
-      .column1 {
+      .column1{
         flex: 2; 
         padding: 10px;
         background-color:#708090;    
           
-        
       }
     
-      .column2 {
+      .column2{
         flex: 2;
         padding: 10px;
         background-color:linen;
@@ -207,15 +212,76 @@ p{
 }
  
 
- 
+ .quote{
+   font-family: sans-serif;
+   color: white;
+   padding-left: 50px;
+   font-size: 18px;
+   text-align: left;
+  }
 
 .footer {
     padding: 10px;
     text-align: center;
     background: #f8dbcd;
     margin-top: auto;
+  }
+
+  form label {
+    display: inline-block;
+    width: 100px;
+    font-family: sans-serif;
+    color: white;
     
+  }
+  
+  form div {
+    margin-bottom: 10px;
+    margin-left: 50px;
     
+  }
+ 
+
+@media (max-width:900px){
     
+  .content{
+        flex-direction: column;
+
+}
+.navbar, .navbar a {
+  padding: 14px 70px;
+  
+}
+.flexbox-container {
+  flex-direction: column;
+  align-items: center;
+  height: 1300px;
 }
 
+@media (max-width:600px){
+
+  .content{
+      flex-direction: column;
+  }
+
+  h2{
+    font-size:24px
+}
+
+p{
+    font-size:20px
+  }
+
+ 
+  .navbar, .navbar a {
+    flex-direction: column;
+    
+  }
+  
+  .flexbox-container {
+    flex-direction: column;
+    align-items: center;
+    height: 1300px;
+  }
+  
+ 

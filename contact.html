@@ -17,7 +17,7 @@
 </head>
 
 <body> <!-- Här börjar bodyn  -->
-   
+    <script src="script.js"></script> <!-- Länk till Javascript  -->
     <header> 
         <!-- Min header  -->
         <div class="header">
@@ -41,13 +41,31 @@
 
         <!-- Här under väljer jag section taggen för underlättande av sematiken/ användande av skärmläsare -->
         <section>
+
+        
           
                     <h2 class="contact">Contact</h2>
-                    <p><b>Phone:</b> +46700000000
+                    <p class="contact"><b>Phone:</b> +46700000000
                         <br><b>E-mail:</b> hello.2space@gmail.com<br>
                     <b>Store Location:</b> Online</p>
-                
-            
+                    <p class="news">Wan't to be a part of the Second Space community?<br>Sign up to our newsletter here!</p>
+
+                    <!-- Javascript form  -->
+                    <form onsubmit="return setAction(this)">
+                        <div>
+                          <label>Name:</label>
+                          <input id="name" name="name" type="text">
+                        </div>
+                        <div>
+                          <label>Email:</label>
+                          <input id="email" name="email" type="email">
+                        </div>
+                        <div>
+                          <input id="submit" type="submit">
+                        </div>
+                      </form>
+                    
+            <br><br><br><br><br><br>
         
 </section>
 
